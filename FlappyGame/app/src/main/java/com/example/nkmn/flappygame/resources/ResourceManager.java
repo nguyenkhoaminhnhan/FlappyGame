@@ -208,7 +208,8 @@ public class ResourceManager {
 	     
 	    MusicFactory.setAssetBasePath("mfx/");
 	    try {
-	        mMusic = MusicFactory.createMusicFromAsset(mActivity.getEngine().getMusicManager(), mActivity, "bird_sound.ogg");
+	        //mMusic = MusicFactory.createMusicFromAsset(mActivity.getEngine().getMusicManager(), mActivity, "bird_sound.ogg");
+	        mMusic = MusicFactory.createMusicFromAsset(mActivity.getEngine().getMusicManager(), mActivity, "song.ogg");
 	        mMusic.setLooping(true);
 	    } catch (final IOException e) {
 	        Debug.e(e);
