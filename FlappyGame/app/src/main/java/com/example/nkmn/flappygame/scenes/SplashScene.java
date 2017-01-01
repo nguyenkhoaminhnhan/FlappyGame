@@ -23,10 +23,6 @@ public class SplashScene extends BaseScene {
             }
         };
         attachChild(splash);
-         
-        Text copyrightText = new Text(0, 0, mResourceManager.mFont1, "(c) 2011-2014", new TextOptions(HorizontalAlign.LEFT), mVertexBufferObjectManager);
-        copyrightText.setPosition(SCREEN_WIDTH - copyrightText.getWidth()-5, SCREEN_HEIGHT - copyrightText.getHeight()-5);
-        attachChild(copyrightText); 
     }
      
     @Override
