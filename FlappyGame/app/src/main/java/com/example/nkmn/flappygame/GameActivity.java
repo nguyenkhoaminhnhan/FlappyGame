@@ -21,6 +21,8 @@ public class GameActivity extends SimpleBaseGameActivity {
 
     public static final int CAMERA_WIDTH = 320;
     public static final int CAMERA_HEIGHT = 480;
+    //public static final int CAMERA_WIDTH = 360;
+    //public static final int CAMERA_HEIGHT = 660;
 
     private Camera mCamera;
     private ResourceManager mResourceManager;
