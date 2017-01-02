@@ -374,6 +374,7 @@ public class GameScene extends BaseScene implements IOnSceneTouchListener {
 
                 if (score != mPipePool.getPipeIndex()
                         && mBird.getX() > (mPipe.getX() + mPipeWidth)) {
+                    mResourceManager.mScoreSound.play();
                     score = mPipePool.getPipeIndex();
                     mHudText.setText(String.valueOf(score));
                 }

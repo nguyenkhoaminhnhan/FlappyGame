@@ -56,6 +56,7 @@ public class ResourceManager {
     public Sound mSound;
     public Sound mFlappySound;
     public Sound mGameOverSound;
+    public Sound mScoreSound;
     public Music mMusic;
 
     private ResourceManager() {
@@ -208,6 +209,7 @@ public class ResourceManager {
             mSound = SoundFactory.createSoundFromAsset(mActivity.getEngine().getSoundManager(), mActivity, "metal_hit.ogg");
             mFlappySound = SoundFactory.createSoundFromAsset(mActivity.getEngine().getSoundManager(), mActivity, "jump.ogg");
             mGameOverSound = SoundFactory.createSoundFromAsset(mActivity.getEngine().getSoundManager(), mActivity, "gameover.ogg");
+            mScoreSound = SoundFactory.createSoundFromAsset(mActivity.getEngine().getSoundManager(), mActivity, "score.ogg");
         } catch (final IOException e) {
             Debug.e(e);
         }
@@ -231,6 +233,11 @@ public class ResourceManager {
         if (mGameOverSound != null) {
             mGameOverSound.release();
             mGameOverSound = null;
+        }
+
+        if (mScoreSound != null) {
+            mScoreSound.release();
+            mScoreSound = null;
         }
 
         if (mFlappySound != null) {
